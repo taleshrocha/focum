@@ -3,7 +3,8 @@ import ChatButton from "./ChatButton";
 export default function SideBar() {
   return (
     <nav 
-      className="fixed left-0 top-0 h-screen w-48 bg-neutral-800"
+      className="flex flex-col 
+        h-screen w-48 bg-neutral-800"
     >
       <ChatButton name={"Chat1"}/>
       <ChatButton name={"Chat2"}/>

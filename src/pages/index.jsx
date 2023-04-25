@@ -1,4 +1,5 @@
 import SideBar from "@/components/SideBar";
+import TitlePanel from "@/components/TitlePanel";
 import Head from "next/head";
 
 export default function Home() {
@@ -11,11 +12,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
-        className={`flex min-h-screen flex-col items-center justify-between 
-        bg-neutral-900 p-24`}
+        className={`flex  min-h-screen bg-neutral-900`}
       >
-        <h1>Hello</h1>
         <SideBar />
+
+        {/*Main part*/}
+        <div
+          className={`flex flex-col items-center justify-between w-full h-full
+            p-4
+          `}
+        >
+          <TitlePanel
+            title={"Look at that!"}
+            description={"Help! I can't stop looking!"}
+          />
+
+        </div>
       </main>
     </>
   )
