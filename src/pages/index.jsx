@@ -1,3 +1,4 @@
+import DiscussionPanel from "@/components/DiscussionPanel";
 import SideBar from "@/components/SideBar";
 import TitlePanel from "@/components/TitlePanel";
 import Head from "next/head";
@@ -26,6 +27,10 @@ export default function Home() {
             title={"Look at that!"}
             description={"Help! I can't stop looking!"}
           />
+
+          <DiscussionPanel>
+            <h2>Hello</h2>
+          </DiscussionPanel>
 
         </div>
       </main>
